@@ -1,0 +1,33 @@
+<%- include('./partials/header') %>
+<div class="container">
+<div class="jumbotron">
+        <h1 class="display-4">Transform Your Blog into Social Posts</h1>
+        <p class="lead">Paste a link from one of your blog's post in the form below and then automatically generate social media posts!</p>
+        <hr class="my-4">
+        <p>Use your .csv file to edit, upload, and then inport into <a href="https://meetedgar.com/">Meet Edgar</a>, the social media automation platform.</p>
+        <p>Go to our .csv <a href="/import-guide">import guide</a> to see our Microsoft Excel&trade; importing best practices.</p>
+        <a class="btn btn-primary btn-lg" href="/import-guide" role="button">Learn more...</a>
+      </div>
+    </div>
+<div class="container blog-entry">
+    <form action="/generate" method="post">
+        <div class="form-row">
+            <div class="col-12 col-lg-2" id="blog-entry-label"><label class="col-form-label"><strong>Blog Link:</strong></label></div>
+            
+            
+            <div class="col-12 col-lg-4" id="blog-entry-url">     
+                <input type="text" name="url" placeholder="https://latishastyles.com" width="200px" class="form-control">
+            </div>
+            <div class="col-12 col-lg-4" id="blog-entry-selection">  
+            <select name="selection" id="selection" class="form-control">
+                <option value="getSentences">Generate from Sentences</option>
+                <option value="getParagraphs">Generate from Paragraphs</option>
+            </select>
+            </div>
+            <div class="col-12 col-lg-2" id="blog-entry-button"> 
+                <button type="submit" class="btn btn-primary start-over form-control">Generate</button>
+                </div>
+        </div>
+    </form>  
+</div>
+    <%- include('./partials/footer') %>

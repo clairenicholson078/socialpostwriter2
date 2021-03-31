@@ -1,0 +1,134 @@
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    background-color: #7260BE;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.container.blog-entry{
+    box-shadow: 0px 2px 4px rgba(114,96,190,0.5);
+    padding: 25px;
+    margin: 25px auto;
+}
+
+li {
+    list-style-type:none;
+    margin-bottom: 8px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    color: #444;
+}
+
+.form-row.buttons{
+    margin: 25px auto;
+    text-align: center;
+}
+
+
+.btn.btn-primary{
+    background-color: #7260BE;
+    border-color: #7260BE;
+}
+
+.btn.btn-primary.start-over {
+    background-color: #b72890;
+}
+
+.btn.btn-primary.start-over a{
+    color: white;
+}
+
+.panel{
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+
+
+/* flexbox sticky footer solution */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 1.5em;
+    background-color: #7260BE;
+}
+
+.footer p {
+	margin-top: 5px;
+	font-size: 1em;
+  color: #fff;
+}
+
+.footer a {
+    color: white;
+}
+
+
+#guide h1{  
+    margin: 35px auto;
+   
+}
+#guide img{
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border: 1px solid black;
+}
+
+#start-over{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 991.98px) { 
+
+    #blog-entry-label{
+        display: none;
+    }
+
+    #blog-entry-label{
+        display: none;
+    }
+
+    .container.blog-entry div{
+        margin: 5px auto;
+    }
+
+    .footer p {
+        margin-top: 5px;
+        font-size: .8em;
+      color: #fff;
+    }
+
+    .navbar-brand{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 5vw;
+    }
+
+}
