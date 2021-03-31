@@ -103,6 +103,7 @@ body {
 #start-over{
     margin-top: 25px;
     margin-bottom: 25px;
+	background-color: #7272ff;
 }
 
 @media (max-width: 991.98px) { 
